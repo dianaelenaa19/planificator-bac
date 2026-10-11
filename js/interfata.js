@@ -1,0 +1,1 @@
+// interfata.js - desenarea paginii (Pasul 2 și următorii)

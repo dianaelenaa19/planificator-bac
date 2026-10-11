@@ -1,0 +1,1 @@
+// algoritmi.js - repetare spațiată și planificare (Pașii 7-11)
