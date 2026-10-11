@@ -26,7 +26,38 @@
 
     <section id="materii" hidden>
       <h2>Materii</h2>
-      <p>Aici vei adăuga materiile și capitolele.</p>
+
+      <form id="form-materie">
+        <label>
+          Nume materie
+          <input type="text" id="materie-nume" placeholder="de ex. Matematică" required>
+        </label>
+
+        <label>
+          Data examenului
+          <input type="date" id="materie-data" required>
+        </label>
+
+        <label>
+          Importanță
+          <select id="materie-importanta">
+            <option value="1">1 - mică</option>
+            <option value="2">2</option>
+            <option value="3" selected>3 - medie</option>
+            <option value="4">4</option>
+            <option value="5">5 - foarte mare</option>
+          </select>
+        </label>
+
+        <div class="butoane-formular">
+          <button type="submit" id="materie-salveaza">Adaugă materia</button>
+          <button type="button" id="materie-anuleaza" hidden>Anulează</button>
+        </div>
+      </form>
+
+      <p id="materie-mesaj" class="mesaj-eroare"></p>
+
+      <ul id="lista-materii"></ul>
     </section>
 
     <section id="calendar" hidden>

@@ -55,3 +55,88 @@ main {
 section[hidden] {
   display: none;
 }
+/* Formularul pentru materii */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+form input,
+form select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.butoane-formular {
+  display: flex;
+  gap: 8px;
+}
+
+form button,
+li button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+form button[type="button"],
+li button.secundar {
+  background: #888;
+}
+
+li button.sterge {
+  background: #dc2626;
+}
+
+button[hidden] {
+  display: none;
+}
+
+.mesaj-eroare {
+  color: #dc2626;
+  min-height: 20px;
+  margin: 0 0 10px;
+}
+
+#lista-materii {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-materii li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f0f4ff;
+  border-radius: 8px;
+}
+
+#lista-materii li .info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fara-materii {
+  color: #666;
+  font-style: italic;
+}
