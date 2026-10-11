@@ -140,3 +140,76 @@ button[hidden] {
   color: #666;
   font-style: italic;
 }
+/* Capitole (Pasul 6) */
+#zona-capitole {
+  margin-top: 30px;
+  border-top: 2px solid #eee;
+  padding-top: 10px;
+}
+
+.alege-materie {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  max-width: 300px;
+  margin-bottom: 12px;
+}
+
+.alege-materie select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+textarea {
+  padding: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  width: 100%;
+}
+
+form label.lat {
+  width: 100%;
+}
+
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.mesaj-ok {
+  color: #15803d;
+  min-height: 20px;
+  margin: 0 0 10px;
+}
+
+#lista-capitole {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-capitole li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  background: #f7f7f7;
+  border-radius: 8px;
+}
+
+#lista-capitole li .info {
+  flex: 1;
+  min-width: 200px;
+}

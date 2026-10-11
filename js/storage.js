@@ -38,6 +38,13 @@ export function getStare() {
 }
 
 // Generează un identificator unic pentru materii, capitole etc.
+let ultimulId = 0;
+
 export function idNou() {
-  return Date.now() + Math.floor(Math.random() * 1000);
+  let id = Date.now();
+  if (id <= ultimulId) {
+    id = ultimulId + 1;
+  }
+  ultimulId = id;
+  return id;
 }

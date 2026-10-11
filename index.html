@@ -58,6 +58,67 @@
       <p id="materie-mesaj" class="mesaj-eroare"></p>
 
       <ul id="lista-materii"></ul>
+
+      <div id="zona-capitole">
+        <h3>Capitole</h3>
+
+        <label class="alege-materie">
+          Materia
+          <select id="capitol-materie"></select>
+        </label>
+
+        <form id="form-capitol">
+          <label>
+            Nume capitol
+            <input type="text" id="capitol-nume" placeholder="de ex. Funcții" required>
+          </label>
+
+          <label>
+            Cât de bine îl știu
+            <select id="capitol-incredere">
+              <option value="1">1 - deloc</option>
+              <option value="2">2 - puțin</option>
+              <option value="3" selected>3 - mediu</option>
+              <option value="4">4 - bine</option>
+              <option value="5">5 - foarte bine</option>
+            </select>
+          </label>
+
+          <div class="butoane-formular">
+            <button type="submit" id="capitol-salveaza">Adaugă capitolul</button>
+            <button type="button" id="capitol-anuleaza" hidden>Anulează</button>
+          </div>
+        </form>
+
+        <details>
+          <summary>Adaugă mai multe capitole deodată</summary>
+          <form id="form-masa">
+            <label class="lat">
+              Câte un capitol pe linie
+              <textarea id="capitole-text" rows="6" placeholder="Funcții&#10;Șiruri&#10;Probabilități"></textarea>
+            </label>
+
+            <label>
+              Încredere pentru toate
+              <select id="masa-incredere">
+                <option value="1">1 - deloc</option>
+                <option value="2">2 - puțin</option>
+                <option value="3" selected>3 - mediu</option>
+                <option value="4">4 - bine</option>
+                <option value="5">5 - foarte bine</option>
+              </select>
+            </label>
+
+            <div class="butoane-formular">
+              <button type="submit">Adaugă toate capitolele</button>
+            </div>
+          </form>
+        </details>
+
+        <p id="capitol-mesaj" class="mesaj-eroare"></p>
+
+        <ul id="lista-capitole"></ul>
+      </div>
     </section>
 
     <section id="calendar" hidden>

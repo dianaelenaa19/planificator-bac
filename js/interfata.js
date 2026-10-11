@@ -2,6 +2,7 @@
 
 import { getStare, salveaza, idNou } from "./storage.js";
 import { azi, formateazaData } from "./utils.js";
+import { deseneazaCapitole } from "./capitole.js";
 
 // Dacă editezi o materie, aici ține minte care (altfel e null)
 let idEditat = null;
@@ -79,6 +80,7 @@ function stergeMaterie(materie) {
 
 // Golește lista și o desenează din nou, după datele din stare
 export function deseneazaMaterii() {
+  deseneazaCapitole();
   const lista = document.getElementById("lista-materii");
   lista.innerHTML = "";
 
