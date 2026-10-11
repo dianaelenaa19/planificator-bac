@@ -8,8 +8,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Planificator Bacalaureat</h1>
-  <p id="stare-proiect">Se încarcă...</p>
+  <header>
+    <h1>Planificator Bacalaureat</h1>
+    <nav>
+      <button data-sectiune="azi" class="activ">Azi</button>
+      <button data-sectiune="materii">Materii</button>
+      <button data-sectiune="calendar">Calendar</button>
+      <button data-sectiune="statistici">Statistici</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="azi">
+      <h2>Azi</h2>
+      <p>Aici vor apărea capitolele de repetat azi.</p>
+    </section>
+
+    <section id="materii" hidden>
+      <h2>Materii</h2>
+      <p>Aici vei adăuga materiile și capitolele.</p>
+    </section>
+
+    <section id="calendar" hidden>
+      <h2>Calendar</h2>
+      <p>Aici va apărea calendarul cu planul.</p>
+    </section>
+
+    <section id="statistici" hidden>
+      <h2>Statistici</h2>
+      <p>Aici vor apărea graficele.</p>
+    </section>
+  </main>
 
   <script type="module" src="js/main.js"></script>
 </body>

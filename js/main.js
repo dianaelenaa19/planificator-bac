@@ -1,4 +1,3 @@
-import { test } from "./utils.js";
+import { pornesteMeniul } from "./interfata.js";
 
-console.log(test());
-document.getElementById("stare-proiect").textContent = test();
+pornesteMeniul();
