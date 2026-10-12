@@ -3,6 +3,7 @@
 import { getStare, salveaza, idNou } from "./storage.js";
 import { azi, formateazaData } from "./utils.js";
 import { deseneazaCapitole } from "./capitole.js";
+import { deseneazaAzi } from "./azi.js";
 
 // Dacă editezi o materie, aici ține minte care (altfel e null)
 let idEditat = null;
@@ -19,6 +20,11 @@ export function arataSectiunea(id) {
   document.querySelectorAll("nav button").forEach(function (buton) {
     buton.classList.toggle("activ", buton.dataset.sectiune === id);
   });
+
+  // de fiecare dată când intri în „Azi", lista se reface din date
+  if (id === "azi") {
+    deseneazaAzi();
+  }
 }
 
 export function pornesteMeniul() {

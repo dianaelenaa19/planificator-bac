@@ -21,7 +21,36 @@
   <main>
     <section id="azi">
       <h2>Azi</h2>
-      <p>Aici vor apărea capitolele de repetat azi.</p>
+      <p id="azi-rezumat" class="rezumat"></p>
+
+      <form id="form-sesiune" hidden>
+        <h3 id="sesiune-titlu" class="sesiune-titlu"></h3>
+
+        <label>
+          Cum ți-a mers?
+          <select id="sesiune-scor">
+            <option value="1">1 - nu știu deloc</option>
+            <option value="2">2 - greu</option>
+            <option value="3" selected>3 - mediu</option>
+            <option value="4">4 - bine</option>
+            <option value="5">5 - foarte bine</option>
+          </select>
+        </label>
+
+        <label>
+          Minute petrecute
+          <input type="number" id="sesiune-minute" min="1" max="600" value="30">
+        </label>
+
+        <div class="butoane-formular">
+          <button type="submit">Salvează sesiunea</button>
+          <button type="button" id="sesiune-anuleaza">Anulează</button>
+        </div>
+      </form>
+
+      <p id="azi-mesaj" class="mesaj-ok"></p>
+
+      <ul id="lista-azi"></ul>
     </section>
 
     <section id="materii" hidden>
